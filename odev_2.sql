@@ -1,5 +1,6 @@
 SELECT * FROM film
-WHERE replacement_cost BETWEEN 12.99 AND 16.99;
+WHERE replacement_cost BETWEEN 12.99 AND 16.98999	
+ORDER BY replacement_cost DESC;
 
 SELECT first_name , last_name FROM actor
 WHERE first_name IN ('Penelope','Nick' , 'Ed' );
