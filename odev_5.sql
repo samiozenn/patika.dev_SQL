@@ -11,7 +11,7 @@ LIMIT 5;
 SELECT title,length FROM film
 WHERE title LIKE '%n'
 ORDER BY length 
-OFFSET 6
+OFFSET 5
 LIMIT 5;
 
 --customer tablosunda bulunan last_name sütununa göre 
