@@ -38,3 +38,35 @@ ORDER BY first_name
 );
 
 --4
+-- 1. soru için...
+(
+SELECT first_name FROM actor
+ORDER BY first_name
+)
+UNION ALL
+(
+SELECT first_name FROM customer
+ORDER BY first_name
+);
+
+-- 2. soru için...
+(
+SELECT first_name FROM actor
+ORDER BY first_name
+)
+INTERSECT ALL
+(
+SELECT first_name FROM customer
+ORDER BY first_name
+);
+
+--3 soru için...
+(
+SELECT first_name FROM actor
+ORDER BY first_name
+)
+EXCEPT ALL
+(
+SELECT first_name FROM customer
+ORDER BY first_name
+);
